@@ -1,76 +1,68 @@
 import "./Footer.css";
-import logoinstagram from "/instagram.png";
-import logofacebook from "/facebook.png";
-import logo from "/logo.png";
 import ImgGitHub from "/github.png";
+import facebook from "/facebook.png";
+import instagram from "/instagram.png";
 
 function Footer() {
   return (
     <footer className="footer">
-      {/* Logo principal */}
-      
+      <div className="footer-top">
 
-      {/* Links externos (exemplo: GitHub) */}
-      <nav className="footer-section">
-        <a href="https://github.com/VieiraQuezia/projeto_final_marvel.git" target="_blank" rel="noopener noreferrer">
-          <img className="imgGithub" src={ImgGitHub} alt="GitHub" width={40} height={40}/>
-        </a>
-      </nav>
-
-      {/* Redes Sociais */}
-      <div className="footer-section footer-social">
-        <div className="info">
-          <img className="imgRedes" src={logoinstagram} alt="Instagram" width={40} height={40}/>
-          <p>@TropadaMandioca6_oficial</p>
+        {/* Logo Marvel e coluna 1 */}
+        <div className="footer-column">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png"
+            alt="Marvel Logo"
+            className="footer-marvel-logo"
+          />
+          <ul>
+            <li>ABOUT MARVEL</li>
+            <li>HELP/FAQS</li>
+            <li>CAREERS</li>
+            <li>INTERNSHIPS</li>
+          </ul>
         </div>
-        <div className="info">
-          <img className="imgRedes" src={logofacebook} alt="Facebook" width={40} height={40}/>
-          <p>Tropa Mandioca 6 Oficial</p>
+
+        {/* Coluna 2 */}
+        <div className="footer-column">
+          <ul>
+            <li>ADVERTISING</li>
+            <li>DISNEY+</li>
+            <li>MARVELHQ.COM</li>
+            <li>REDEEM DIGITAL COMICS</li>
+          </ul>
         </div>
+
+        {/* GitHub como Marvel Unlimited */}
+        <div className="footer-column">
+          <a href="https://github.com/VieiraQuezia/projeto_final_marvel.git" target="_blank" rel="noopener noreferrer">
+            <img src={ImgGitHub} alt="GitHub" className="footer-unlimited-logo" />
+          </a>
+          <p><strong>MARVEL UNLIMITED</strong></p>
+          <p>Access Over 30,000+ Digital Comics</p>
+        </div>
+
+        {/* Redes sociais apenas visual */}
+        <div className="footer-column">
+          <p><strong>FOLLOW MARVEL</strong></p>
+          <div className="social-icons">
+            <img src={facebook} alt="Facebook" />
+            <img src={instagram} alt="Instagram" />
+          </div>
+        </div>
+
       </div>
 
-      {/* Contatos */}
-      <div className="footer-section footer-contact">
-        <p>📞 Contato para Vendas: +55 (19) 46002-8239</p>
-        <p>📩 Email: tropadamandioca6@gmail.com</p>
-      </div>
-
-      {/* Sobre o Projeto */}
-      <div className="footer-section footer-about">
-        <h4>Tropa da Mandioca © 2025</h4>
-        <p>
-          Nosso site, desenvolvido com React, React Router, useEffect e useState,
-          permite que os usuários busquem heróis e os adicionem aos favoritos a partir de uma API.
-          Os dados são armazenados no localStorage e exibidos dinamicamente em outra página,
-          onde também é possível remover um Pokémon dos favoritos. 💗
-        </p>
-      </div>
-
-      <div className="footer-logo">
-        <img className="imgLogo" src={logo} alt="Logo Tropa da Mandioca" width={200} height={100}/>
-      </div>
-
-      {/* Tecnologias usadas */}
-      <div className="footer-section footer-technologies">
-        <h4>Sistemas:</h4>
+      {/* Linha de baixo */}
+      <div className="footer-bottom">
         <ul>
-          <li>useEffect</li>
-          <li>useState</li>
-          <li>React Router Dom</li>
+          <li>Condições para o uso</li>
+          <li>Política de Privacidade</li>
+          <li>Anúncios baseados em interesses</li>
+          <li>Proteção de Dados no Brasil</li>
+          <li>Acordo de licença</li>
         </ul>
-      </div>
-
-      {/* Divisória */}
-      <hr className="footer-divider" />
-
-      {/* Integrantes da equipe */}
-      <div className="footer-section footer-team">
-        <ul>
-          <li>Guilherme Gabriel Santana</li>
-          <li>Hayeska Loredane Alves Machado</li>
-          <li>Leonardo Mori Vicente</li>
-          <li>Quezia Amaral Vieira</li>
-        </ul>
+        <p>©2025 MARVEL</p>
       </div>
     </footer>
   );
