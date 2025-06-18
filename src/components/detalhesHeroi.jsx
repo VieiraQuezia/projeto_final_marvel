@@ -46,7 +46,7 @@ function DetalhePersonagem() {
         {personagem.description ? personagem.description : "Sem descrição disponível para este personagem."}
       </p>
 
-      <div className="like-wrapper">
+      {/* <div className="like-wrapper">
         <input className="check" type="checkbox" id="like-toggle" />
         <label className="container" htmlFor="like-toggle">
           <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" className="icon inactive">
@@ -58,7 +58,7 @@ function DetalhePersonagem() {
           <div className="checkmark" />
           <span className="like-text">Like</span>
         </label>
-      </div>
+      </div> */}
     </div>
   );
 }
