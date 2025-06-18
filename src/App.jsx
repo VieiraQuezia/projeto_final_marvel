@@ -7,7 +7,6 @@ function App() {
   return (
     <div>
       <Header />
-      <h2>Hero Card estilo Netflix:</h2>
 
       <ListaPersonagens />  {/* Aqui aparecem os cards da API com seu CSS */}
 

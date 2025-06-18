@@ -7,7 +7,7 @@
   background-color: #000;
   color: white;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   font-family: Arial, sans-serif;
 }
 
@@ -39,7 +39,11 @@
   letter-spacing: 0.5px;
 }
 
-.hero-info:hover {
+.hero-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(245, 3, 3, 0.4);
+      background-color: red;
+
 }
+
+
