@@ -1,0 +1,57 @@
+.footer {
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin-top: 5vh;
+  }
+  
+  .footer-logo {
+    margin-top: 5px;
+  }
+  
+  .footer-section {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    font-size: 13px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #e50914;
+  }
+  
+  .footer-social,
+  .footer-contact,
+  .footer-about,
+  .footer-technologies,
+  .footer-team {
+    margin-bottom: 10px;
+  }
+  
+  .footer-social img,
+  .footer-contact img,
+  .footer-about img,
+  .footer-technologies img,
+  .footer-team img {
+    margin-right: 8px;
+  }
+  
+  .footer-divider {
+    width: 100%;
+    margin-top: 10px;
+    border-color: white;
+  }
+  

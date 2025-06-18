@@ -6,70 +6,73 @@ import ImgGitHub from "/github.png";
 
 function Footer() {
   return (
-    <>
-      <section className="bodyFooter">
-        <section className="infoContatos">
-          <section className="redes">
-            <section className="info">
-              <img className="imgRedes" src={logoinstagram} />
-              <p> @TropadaMandioca6_oficial</p>
-            </section>
+    <footer className="footer">
+      {/* Logo principal */}
+      
 
-            <section className="info">
-              <img className="imgRedes" src={logofacebook} />
-              <p> Tropa Mandioca 6 Oficial</p>
-            </section>
-          </section>
+      {/* Links externos (exemplo: GitHub) */}
+      <nav className="footer-section">
+        <a href="https://github.com/VieiraQuezia/projeto_final_marvel.git" target="_blank" rel="noopener noreferrer">
+          <img className="imgGithub" src={ImgGitHub} alt="GitHub" width={40} height={40}/>
+        </a>
+      </nav>
 
-          <section className="contato">
-            <p> 📞 Contato para Vendas: +55 (19) 46002-8239</p>
-            <p> 📩 Email para Contato: tropadamandioca6@gmail.com</p>
-          </section>
-        </section>
+      {/* Redes Sociais */}
+      <div className="footer-section footer-social">
+        <div className="info">
+          <img className="imgRedes" src={logoinstagram} alt="Instagram" width={40} height={40}/>
+          <p>@TropadaMandioca6_oficial</p>
+        </div>
+        <div className="info">
+          <img className="imgRedes" src={logofacebook} alt="Facebook" width={40} height={40}/>
+          <p>Tropa Mandioca 6 Oficial</p>
+        </div>
+      </div>
 
-        <section className="informacoes">
-          <section className="sobreNos">
-            <p>
-              <h4> Tropa da Mandioca © 2025 </h4> – Nosso site, desenvolvido com
-              React, React Router, useEffect e useState, permite que os usuários
-              busquem heróis e os adicionem aos favoritos a partir de uma API. Os dados
-              são armazenados no localStorage e exibidos dinamicamente em outra
-              página, onde também é possível remover um Pokémon dos favoritos.💗
-            </p>
-          </section>
+      {/* Contatos */}
+      <div className="footer-section footer-contact">
+        <p>📞 Contato para Vendas: +55 (19) 46002-8239</p>
+        <p>📩 Email: tropadamandioca6@gmail.com</p>
+      </div>
 
-          <section className="listas">
-            <h4> Sistemas: </h4>
-            <ul>
-              <li>useEffect</li>
-              <li>useState</li>
-              <li>React Router Dom</li>
-            </ul>
-          </section>
-        </section>
-        <nav className="logos">
-          <img className="imgLogo" src={logo} />
-          <a
-            href="https://github.com/VieiraQuezia/projeto_final_marvel.git"
-            target="_blank"
-          >
-            <img className="imgGithub" src={ImgGitHub} />
-          </a>
-        </nav>
-        <hr />
+      {/* Sobre o Projeto */}
+      <div className="footer-section footer-about">
+        <h4>Tropa da Mandioca © 2025</h4>
+        <p>
+          Nosso site, desenvolvido com React, React Router, useEffect e useState,
+          permite que os usuários busquem heróis e os adicionem aos favoritos a partir de uma API.
+          Os dados são armazenados no localStorage e exibidos dinamicamente em outra página,
+          onde também é possível remover um Pokémon dos favoritos. 💗
+        </p>
+      </div>
 
-        <section className="integrantes">
-          <section>
-            <ul>
-              <li>Guilherme Gabriel Santana</li>
-              <li>Hayeska Loredane Alves Machado</li>
-              <li>Leonardo Mori Vicente</li>
-              <li>Quezia Amaral Vieira</li>
-            </ul>
-          </section>
-        </section>
-      </section>
-    </>
+      <div className="footer-logo">
+        <img className="imgLogo" src={logo} alt="Logo Tropa da Mandioca" width={200} height={100}/>
+      </div>
+
+      {/* Tecnologias usadas */}
+      <div className="footer-section footer-technologies">
+        <h4>Sistemas:</h4>
+        <ul>
+          <li>useEffect</li>
+          <li>useState</li>
+          <li>React Router Dom</li>
+        </ul>
+      </div>
+
+      {/* Divisória */}
+      <hr className="footer-divider" />
+
+      {/* Integrantes da equipe */}
+      <div className="footer-section footer-team">
+        <ul>
+          <li>Guilherme Gabriel Santana</li>
+          <li>Hayeska Loredane Alves Machado</li>
+          <li>Leonardo Mori Vicente</li>
+          <li>Quezia Amaral Vieira</li>
+        </ul>
+      </div>
+    </footer>
   );
 }
 
