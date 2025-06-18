@@ -1,3 +1,7 @@
+
+
+/* Header Estilo Marvel */
+
 .marvel-header {
   background-color: #1c1c1c;
   color: white;
@@ -5,22 +9,18 @@
   flex-direction: column;
   align-items: center;
   font-family: Arial, sans-serif;
-  width: 100%;
 }
 
-
-
-
 .header-logo {
- 
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .header-nav {
   display: flex;
   gap: 20px;
   padding: 10px 0;
-  font-size: 13px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .header-nav a {
@@ -31,4 +31,39 @@
 
 .header-nav a:hover {
   color: #e50914;
+}
+
+/* Slider CSS */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  background-size: cover;
+
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.slide1 {
+  background-image: url('/deadpool.png');
+}
+
+.slide2 {
+  background-image: url('/marvelComics.png');
+}
+
+.slide3 {
+  background-image: url('/marvelxdc.png');
 }

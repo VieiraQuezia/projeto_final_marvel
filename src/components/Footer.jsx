@@ -1,75 +1,70 @@
 import "./Footer.css";
-import logoinstagram from "/instagram.png";
-import logofacebook from "/facebook.png";
-import logo from "/logo.png";
 import ImgGitHub from "/github.png";
+import facebook from "/facebook.png";
+import instagram from "/instagram.png";
 
 function Footer() {
   return (
-    <>
-      <section className="bodyFooter">
-        <section className="infoContatos">
-          <section className="redes">
-            <section className="info">
-              <img className="imgRedes" src={logoinstagram} />
-              <p> @TropadaMandioca6_oficial</p>
-            </section>
+    <footer className="footer">
+      <div className="footer-top">
 
-            <section className="info">
-              <img className="imgRedes" src={logofacebook} />
-              <p> Tropa Mandioca 6 Oficial</p>
-            </section>
-          </section>
+        {/* Logo Marvel e coluna 1 */}
+        <div className="footer-column">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png"
+            alt="Marvel Logo"
+            className="footer-marvel-logo"
+          />
+          <ul>
+            <li>ABOUT MARVEL</li>
+            <li>HELP/FAQS</li>
+            <li>CAREERS</li>
+            <li>INTERNSHIPS</li>
+          </ul>
+        </div>
 
-          <section className="contato">
-            <p> 📞 Contato para Vendas: +55 (19) 46002-8239</p>
-            <p> 📩 Email para Contato: tropadamandioca6@gmail.com</p>
-          </section>
-        </section>
+        {/* Coluna 2 */}
+        <div className="footer-column">
+          <ul>
+            <li>ADVERTISING</li>
+            <li>DISNEY+</li>
+            <li>MARVELHQ.COM</li>
+            <li>REDEEM DIGITAL COMICS</li>
+          </ul>
+        </div>
 
-        <section className="informacoes">
-          <section className="sobreNos">
-            <p>
-              <h4> Tropa da Mandioca © 2025 </h4> – Nosso site, desenvolvido com
-              React, React Router, useEffect e useState, permite que os usuários
-              busquem heróis e os adicionem aos favoritos a partir de uma API. Os dados
-              são armazenados no localStorage e exibidos dinamicamente em outra
-              página, onde também é possível remover um Pokémon dos favoritos.💗
-            </p>
-          </section>
-
-          <section className="listas">
-            <h4> Sistemas: </h4>
-            <ul>
-              <li>useEffect</li>
-              <li>useState</li>
-              <li>React Router Dom</li>
-            </ul>
-          </section>
-        </section>
-        <nav className="logos">
-          <img className="imgLogo" src={logo} />
-          <a
-            href="https://github.com/VieiraQuezia/projeto_final_marvel.git"
-            target="_blank"
-          >
-            <img className="imgGithub" src={ImgGitHub} />
+        {/* GitHub como Marvel Unlimited */}
+        <div className="footer-column">
+          <a href="https://github.com/VieiraQuezia/projeto_final_marvel.git" target="_blank" rel="noopener noreferrer">
+            <img src={ImgGitHub} alt="GitHub" className="footer-unlimited-logo" />
           </a>
-        </nav>
-        <hr />
+          <p><strong>MARVEL UNLIMITED</strong></p>
+          <p>Access Over 30,000+ Digital Comics</p>
+        </div>
 
-        <section className="integrantes">
-          <section>
-            <ul>
-              <li>Guilherme Gabriel Santana</li>
-              <li>Hayeska Loredane Alves Machado</li>
-              <li>Leonardo Mori Vicente</li>
-              <li>Quezia Amaral Vieira</li>
-            </ul>
-          </section>
-        </section>
-      </section>
-    </>
+        {/* Redes sociais apenas visual */}
+        <div className="footer-column">
+          <p><strong>FOLLOW MARVEL</strong></p>
+          <div className="social-icons">
+            <img src={facebook} alt="Facebook" />
+            <img src={instagram} alt="Instagram" />
+          </div>
+        </div>
+
+      </div>
+
+      {/* Linha de baixo */}
+      <div className="footer-bottom">
+        <ul>
+          <li>Condições para o uso</li>
+          <li>Política de Privacidade</li>
+          <li>Anúncios baseados em interesses</li>
+          <li>Proteção de Dados no Brasil</li>
+          <li>Acordo de licença</li>
+        </ul>
+        <p>©2025 MARVEL</p>
+      </div>
+    </footer>
   );
 }
 
