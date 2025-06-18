@@ -1,4 +1,8 @@
 /* Estilização da Lista de Personagens */
+body {
+    margin: 0;
+    padding: 0;
+}
 .hero-card {
   width: 250px;
   border-radius: 0;
@@ -9,6 +13,8 @@
   position: relative;
   transition: all 0.3s ease;
   font-family: Arial, sans-serif;
+  margin-left: 40%;
+
 }
 
 .hero-image {
