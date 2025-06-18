@@ -42,7 +42,7 @@ function Footer() {
           Nosso site, desenvolvido com React, React Router, useEffect e useState,
           permite que os usuários busquem heróis e os adicionem aos favoritos a partir de uma API.
           Os dados são armazenados no localStorage e exibidos dinamicamente em outra página,
-          onde também é possível remover um Pokémon dos favoritos. 💗
+          onde também é possível remover um herói dos favoritos. 💗
         </p>
       </div>
 
