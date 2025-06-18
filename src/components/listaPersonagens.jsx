@@ -44,7 +44,6 @@ function ListaPersonagens() {
           <div className="hero-info">
             <h3>{heroi.name}</h3>
             {/* Se quiser pode incluir uma descrição ou ID do personagem */}
-            <p>ID: {heroi.id}</p>
           </div>
         </div>
       ))}

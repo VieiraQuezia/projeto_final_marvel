@@ -9,7 +9,6 @@
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   font-family: Arial, sans-serif;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
 }
 
 .hero-image {
@@ -40,7 +39,7 @@
   letter-spacing: 0.5px;
 }
 
-.hero-card:hover {
+.hero-info:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(245, 3, 3, 0.4);
 }
