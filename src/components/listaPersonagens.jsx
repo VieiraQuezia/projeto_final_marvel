@@ -23,23 +23,18 @@ function ListaPersonagens() {
   if (carregando) return <p>Carregando heróis...</p>;
 
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", gap: 20 }}>
+    <div > 
       {personagens.map((heroi) => (
-        <div
+        <div className="hero-card"
           key={heroi.id}
-          style={{
-            border: "1px solid #eee",
-            padding: 16,
-            width: 180,
-            textAlign: "center",
-          }}
         >
-          <img
+          <img className="hero-image"
             src={`${heroi.thumbnail.path}/standard_xlarge.${heroi.thumbnail.extension}`}
             alt={heroi.name}
-            style={{ width: "100%", borderRadius: 8 }}
           />
+          <div className="hero-info" >
           <h3>{heroi.name}</h3>
+          </div>
         </div>
       ))}
     </div>
