@@ -9,8 +9,7 @@ function App() {
     <div>
       <Header />
       <BuscaHeroi/> {/* Aqui fica a barra de busca */}
-      <h1>Personagens da Marvel</h1>
-      <p>Encontre seus heróis favoritos!</p>
+      
       <ListaPersonagens />  {/* Aqui aparecem os cards da API com seu CSS */}
 
       <Footer />
