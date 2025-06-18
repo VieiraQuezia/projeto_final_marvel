@@ -1,52 +1,48 @@
-/* Estilização da Lista de Personagens */
-body{
-  margin: 0%;
+body {
+  margin: 0;
 }
 
 .hero-card {
-  width: 250px;
-  border-radius: 4px;
+  width: 20vw;
+  max-width: 16em;
+  border-radius: 0.3em;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.2);
   background-color: #000;
   color: white;
   position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero-image {
-  height: 200px;
+  height: 25vh;
   background-size: cover;
   background-position: center;
-    transition: transform 0.3s ease;
-
+  transition: transform 0.3s ease;
 }
 
 .hero-info {
-  padding: 10px;
-  border-top: 4px solid red;
-    transition: all 1s ease;
-
+  padding: 1em;
+  border-top: 0.3em solid red;
+  transition: all 1s ease;
 }
 
-.hero-card:hover .hero-info{
-border-top: 30px solid none;
-background-color: red;
+.hero-card:hover .hero-info {
+  border-top: 1.5em solid red;
+  background-color: red;
 }
-
 
 .hero-info h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
 }
 
 .hero-info p {
-  margin: 5px 0 0 0;
-  font-size: 12px;
+  margin: 0.3em 0 0 0;
+  font-size: 0.8rem;
   color: #aaa;
   font-weight: bold;
 }
@@ -55,19 +51,18 @@ background-color: red;
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 20px;
-  height: 20px;
+  width: 2vw;
+  height: 2vw;
+  max-width: 1.2em;
+  max-height: 1.2em;
   background-color: #000;
-  transition:  0.3s ease;
-
+  transition: 0.3s ease;
 }
-
 
 /* Hover Effect */
 .hero-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(245, 3, 3, 0.1);
-
+  transform: translateY(-0.4em);
+  box-shadow: 0 0.6em 1em rgba(245, 3, 3, 0.1);
 }
 
 .hero-card:hover .hero-image {
@@ -75,5 +70,5 @@ background-color: red;
 }
 
 .hero-card:hover .hero-info {
-  transform: translateY(-3px);
+  transform: translateY(-0.2em);
 }
