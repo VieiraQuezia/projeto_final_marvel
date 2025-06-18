@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from './components/header.jsx';
+import Footer from './components/footer.jsx';
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
           <p>BENJAMIN BEN GRIMM</p>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
