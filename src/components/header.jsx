@@ -31,14 +31,9 @@ export default function Header() {
         </div>
 
         <nav className="header-nav">
-          <a href="#">NEWS</a>
-          <a href="#">COMICS</a>
-          <a href="#">CHARACTERS</a>
-          <a href="#">MOVIES</a>
-          <a href="#">TV SHOWS</a>
-          <a href="#">GAMES</a>
-          <a href="#">VIDEOS</a>
-          <a href="#">MORE</a>
+          <a href="#">HOME</a>
+          <a href="#">FAVORITOS</a>
+        
         </nav>
       </header>
 
