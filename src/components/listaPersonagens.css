@@ -1,1 +1,46 @@
 /* Estilização da Lista de Personagens */
+.hero-card {
+  width: 250px;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  background-color: #000;
+  color: white;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: Arial, sans-serif;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+}
+
+.hero-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-info {
+  padding: 10px;
+  border-top: 4px solid red;
+}
+
+.hero-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.hero-info p {
+  margin: 5px 0 0 0;
+  font-size: 12px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(245, 3, 3, 0.4);
+}
