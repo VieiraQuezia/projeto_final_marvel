@@ -1,8 +1,4 @@
 //Busca de Heróis
-
-
-
-
 import React, { useEffect, useState } from "react";
 import './styles/buscaHome.css';
 import md5 from "blueimp-md5";

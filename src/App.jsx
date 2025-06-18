@@ -1,17 +1,15 @@
-import "./App.css";
-import Header from './components/header.jsx';
-import Footer from './components/footer.jsx';
-import ListaPersonagens from './components/listaPersonagens.jsx';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import DetalhePersonagem from './components/detalhesHeroi';
+import Home from './home'; 
 
 function App() {
   return (
-    <div>
-      <Header />
-
-      <ListaPersonagens />  {/* Aqui aparecem os cards da API com seu CSS */}
-
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/personagem/:id" element={<DetalhePersonagem/> } />
+      </Routes>
+    </Router>
   );
 }
 
