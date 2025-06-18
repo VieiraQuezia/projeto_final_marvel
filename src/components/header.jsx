@@ -45,18 +45,15 @@ export default function Header() {
           >
             <div
               className="slide slide1"
-              role="group"
-              aria-roledescription="slide"
+              
             ></div>
             <div
               className="slide slide2"
-              role="group"
-              aria-roledescription="slide"
+              
             ></div>
             <div
               className="slide slide3"
-              role="group"
-              aria-roledescription="slide"
+              
             ></div>
           </div>
         </div>
