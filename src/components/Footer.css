@@ -1,82 +1,86 @@
 .footer {
-  background-color: #1c1c1c;
-  color: white;
-  font-family: Arial, sans-serif;
-  padding: 30px;
-  width: 96%;
-  margin-top: 5vh;
-}
-
-.footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-
-.footer-column {
-  flex: 1;
-  min-width: 150px;
-  margin: 10px;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column li {
-  margin-bottom: 8px;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-.footer-column li:hover {
-  color: #e50914;
-}
-
-.footer-marvel-logo {
-  width: 120px;
-  margin-bottom: 10px;
-}
-
-.footer-unlimited-logo {
-  width: 50px;
-  margin-bottom: 8px;
-}
-
-.social-icons img {
-  width: 24px;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-}
-
-.footer-bottom ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-
-.footer-bottom li {
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-.footer-bottom li:hover {
-  color: #e50914;
-}
-
-.footer-bottom p {
-  text-align: center;
-  font-size: 12px;
-  color: #aaa;
-}
+    background-color: #1c1c1c;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 2em;
+    width: 96%;
+    margin-top: 5vh;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2em;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 20%;
+    margin: 1em;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-column li:hover {
+    color: #e50914;
+  }
+  
+  .footer-marvel-logo {
+    width: 10vw;
+    max-width: 8em;
+    margin-bottom: 1em;
+  }
+  
+  .footer-unlimited-logo {
+    width: 4vw;
+    max-width: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .social-icons img {
+    width: 5vw;
+    max-width: 1.5em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .footer-bottom li {
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-bottom li:hover {
+    color: #e50914;
+  }
+  
+  .footer-bottom p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+  
