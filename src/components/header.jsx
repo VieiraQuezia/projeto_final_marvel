@@ -31,7 +31,7 @@ export default function Header() {
         </div>
 
         <nav className="header-nav">
-          <a href="#">HOME</a>
+          <a href="/">HOME</a>
           <a href="#">FAVORITOS</a>
         
         </nav>

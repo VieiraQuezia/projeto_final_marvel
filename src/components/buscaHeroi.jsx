@@ -1,5 +1,6 @@
 // Importando o hook useState do React para manipular estados dentro do componente
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 // Importando a biblioteca md5, usada para gerar o hash de autenticação da API da Marvel
 import md5 from "blueimp-md5";
@@ -68,54 +69,44 @@ function BuscaHeroi() {
   }
 
   
-  return (
-    <>
-      {/* Container geral da página */}
-      <div >
-        {/* Campo de texto para o usuário digitar o nome do herói */}
-        <input
-          type="text"
-          placeholder="Digite o nome do Herói"
-          value={search}                      // Valor controlado pelo estado
-          onChange={(e) => setSearch(e.target.value)}  // Atualiza o estado ao digitar
-          
-        />
+return (
+  <>
+    <div className="busca-container">
+      <input
+        type="text"
+        placeholder="Digite o nome do Herói"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="busca-input"
+      />
 
-        {/* Botão que dispara a busca quando clicado */}
-        <button onClick={buscarPersonagens} >
-          Buscar Herói
-        </button>
+      <button onClick={buscarPersonagens} className="busca-button">
+        Buscar Herói
+      </button>
 
-        {/* Exibe "Carregando..." enquanto a requisição está sendo feita */}
-        {carregando && <p>Carregando...</p>}
+      {carregando && <p className="busca-loading">Carregando...</p>}
 
-        {/* Exibe a mensagem de erro, se houver */}
-        {error && <p >{error}</p>}
+      {error && <p className="busca-error">{error}</p>}
 
-        {/* Lista de heróis encontrados */}
-        <div >
-          {herois.map((heroi) => (
-            <div key={heroi.id} >
-              {/* Nome do herói */}
-              <h2>{heroi.name}</h2>
-
-              {/* Imagem do herói */}
-              <img
-                src={`${heroi.thumbnail.path}.${heroi.thumbnail.extension}`}
-                alt={heroi.name}
-              />
-
-              {/* Descrição do herói (se não tiver, mostra um texto padrão) */}
-              <p>{heroi.description || "Sem descrição disponível."}</p>
-
-             
-            </div>
-          ))}
-        </div>
+      <div className="busca-resultado">
+        {herois.map((heroi) => (
+            <Link to={`/personagem/${heroi.id}`} key={heroi.id} style={{ textDecoration: 'none' }}>
+          <div key={heroi.id} className="busca-card">
+            <h2>{heroi.name}</h2>
+            <img
+              src={`${heroi.thumbnail.path}.${heroi.thumbnail.extension}`}
+              alt={heroi.name}
+            />
+            <p className="busca-description">
+              {heroi.description || "Sem descrição disponível."}
+            </p>
+          </div>
+          </Link>
+        ))}
       </div>
-    </>
-  );
+    </div>
+  </>
+);
 }
-
 // Exporta o componente para ser usado em outras partes do projeto
 export default BuscaHeroi;
