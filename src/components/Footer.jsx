@@ -2,27 +2,13 @@ import "./Footer.css";
 import ImgGitHub from "/github.png";
 import facebook from "/facebook.png";
 import instagram from "/instagram.png";
-import logo from "/logo.png"
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
 
-        {/* Logo Marvel e coluna 1 */}
-        <div className="footer-column">
-          <img
-            src={logo}
-            className="footer-marvel-logo"
-          />
-          <ul>
-            <li>Guilherme Gabriel Santana</li>
-            <li>Hayeska L. A. Machado</li>
-            <li>Leornardo Mori Vicente</li>
-            <li>Quezia Amaral Vieira</li>
-          </ul>
-        </div>
-
+      
         {/* Coluna 2 */}
         <div className="footer-column">
           <ul>
@@ -62,7 +48,7 @@ function Footer() {
           <li>Proteção de Dados no Brasil</li>
           <li>Acordo de licença</li>
         </ul>
-        <p>©2025 GRUPO6</p>
+        <p>©2025 Guilherme Gabriel Santana</p>
       </div>
     </footer>
   );
