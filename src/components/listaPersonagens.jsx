@@ -1,5 +1,7 @@
 import React from "react";
 import './listaPersonagens.css';  // CSS dos cards
+import {  Link } from "react-router-dom";
+
 
 // 🔹 Importando imagens de goleiros
 import hugoPerfil from '../assets/jogadores/hugoSouza2.jpg';
@@ -178,6 +180,7 @@ function ListaPersonagens() {
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: 20 }}>
       {elencoCorinthians.map((elenco, index) => (
+        <Link to={`/jogador/${elenco.nome}`} style={{ textDecoration: 'none', color: 'inherit' }} className="hero-card-link">
         <div className="hero-card" key={index}>
           <div
             className="hero-image"
@@ -188,6 +191,7 @@ function ListaPersonagens() {
             <p>{elenco.posicao}</p>
           </div>
         </div>
+        </Link>
       ))}
     </div>
   );

@@ -39,7 +39,7 @@
 .slider {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   max-height: 30em;
   margin: auto;
   overflow: hidden;
@@ -63,13 +63,13 @@
 
 /* Backgrounds para cada slide */
 .slide1 {
-  background-image: url('/deadpool.png');
+  background-image: url('/estadio.jpg');
 }
 
 .slide2 {
-  background-image: url('/marvelComics.png');
+  background-image: url('jogo.webp');
 }
 
 .slide3 {
-  background-image: url('/marvelxdc.png');
+  background-image: url('/gol.jpg');
 }

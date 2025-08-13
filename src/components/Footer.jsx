@@ -14,8 +14,7 @@ function Footer() {
           <ul>
             <li>React</li>
             <li>React Router Dom</li>
-            <li>API MARVEL</li>
-            <li>md5</li>
+            
           </ul>
         </div>
 
@@ -24,7 +23,7 @@ function Footer() {
           <a href="https://github.com/VieiraQuezia/projeto_final_marvel.git" target="_blank" rel="noopener noreferrer">
             <img src={ImgGitHub} alt="GitHub" className="footer-unlimited-logo" />
           </a>
-          <p><strong>PROJETO MARVEL</strong></p>
+          <p><strong>CORINTHIANS</strong></p>
           
         </div>
 

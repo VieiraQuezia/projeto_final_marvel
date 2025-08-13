@@ -1,5 +1,7 @@
+
 import React, { useEffect, useState } from 'react';
 import './header.css';
+import Logo from '/public/logo.png'
 
 export default function Header() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -12,7 +14,10 @@ export default function Header() {
       setCurrentSlide((prev) => (prev + 1) % totalSlides);
     }, 3000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval
+
+    (interval);
+    
   }, []);
 
 
@@ -23,7 +28,7 @@ export default function Header() {
       <header className="marvel-header">
         <div className="header-logo">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png"
+            src={Logo}
             alt="Marvel Logo"
             className="logo-image"
             width={150}
