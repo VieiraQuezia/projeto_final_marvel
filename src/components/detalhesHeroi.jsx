@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+
+import Header from './header'
+
 import md5 from "blueimp-md5";
 import './detalhesHeroi.css'; // Aqui fica o CSS dos detalhes do personagem
 
@@ -31,6 +34,8 @@ function DetalhePersonagem() {
   if (!personagem) return <p>Personagem não encontrado.</p>;
 
   return (
+    <>
+    <Header></Header>
     <div style={{ padding: 20, color: "white", backgroundColor: "#000", minHeight: "100vh" }}>
       <Link to="/" style={{ color: "red", textDecoration: "none", marginBottom: 20, display: "inline-block" }}>
         ← Voltar
@@ -60,6 +65,7 @@ function DetalhePersonagem() {
         </label>
       </div> */}
     </div>
+    </>
   );
 }
 
